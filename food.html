@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Food Fridge </title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="food.css">
+    <script src="https://kit.fontawesome.com/5889382239.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <section id="header" class="second-color">
+        <a href="#"><img src="images/logo.png" class="logo" alt="" style="height: 45px; width: 45px;"></a>
+        <h1>Food Fridge Community</h1>
+        <div>
+            <ul id="navbar" >
+                <li><a  href="index.html">Home</a></li>
+                <li><a   href="about.html">About</a></li>
+                <li><a  href="donate.html">Donate</a></li>
+                <li><a class="active" href="food.html">Find Food</a></li>
+                <li><a href="community.html">Community</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <button id="openPopupBtn" class="btn btn-primary">Login/Signup</button>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn" class="close">&times;</span>
+                        <h2>Login</h2>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </ul>
+            <div id="mobile">
+                <i id="bar"class="fa-solid fa-outdent"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 style="color: black;">Find Food Near You</h1>
+            <p style="color: black;">Locate community fridges and food resources in your area.</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your city or zip code..." aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59334.747409204916!2d85.56109305715817!3d21.64744665051641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1f0282788c88bb%3A0xcac8ecd818b3fa4d!2sKeonjhar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1722597802073!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+
+    <!-- Food Fridge Locations List -->
+    <section class="container mb-5">
+        <h2>Community Fridge Locations</h2>
+        <div class="form-row mb-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="City/Zip Code">
+            </div>
+            <div class="col">
+                <select class="form-control">
+                    <option>Distance</option>
+                    <option>1 mile</option>
+                    <option>5 miles</option>
+                    <option>10 miles</option>
+                </select>
+            </div>
+            <div class="col">
+                <select class="form-control">
+                    <option>Type of Food Available</option>
+                    <option>Fresh Produce</option>
+                    <option>Canned Goods</option>
+                    <option>Prepared Meals</option>
+                </select>
+            </div>
+        </div>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="mb-1">Fridge Name</h5>
+                <p class="mb-1">123 Main St, City, State, Zip</p>
+                <small>Operating Hours: 8am - 8pm | Types of Food Available: Fresh Produce, Canned Goods</small>
+            </a>
+            <!-- Repeat for additional fridges -->
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="container mb-5">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Use the map or list to find a nearby fridge.</li>
+            <li>Check the operating hours and available food types.</li>
+            <li>Visit the fridge and take what you need.</li>
+            <li>Optional: Leave a note of gratitude or share your experience.</li>
+        </ol>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container mb-5">
+        <h2>Community Stories</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img style="width: 50px;" src="images/userIMG.png" class="card-img-top" alt="User Photo">
+                <div class="card-body">
+                    <h5 class="card-title">User Name</h5>
+                    <p class="card-text">This fridge has been a lifesaver for my family. We're so grateful for the support.</p>
+                </div>
+            </div>
+            <!-- Repeat for additional testimonials -->
+        </div>
+    </section>
+
+    <!-- Volunteer and Support Section -->
+    <section class="container mb-5">
+        <h2>Get Involved</h2>
+        <p>Volunteer Opportunities: Information on how to volunteer for stocking or maintaining fridges.</p>
+        <p>Donation Information: How to donate food or funds to support the initiative.</p>
+        <a href="#" class="btn btn-primary">Volunteer Signup</a>
+        <a href="donate.html" class="btn btn-secondary">Donate</a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mb-5">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Question 1
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Answer to question 1.
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for additional FAQs -->
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" style="height: 80px;width: 80px;">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>ABC Garden, USA</p>
+            <p><strong>Phone No.:</strong>(+91) 99999-99999 / (+91) 00000-00000</p>
+            <p><strong>Hours:</strong>10:00-18:00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us!</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Categories</h4>
+            <a href="#">Donate Food</a>
+            <a href="#">Find Food</a>
+            <a href="#">Become a Volunteer</a>
+            <a href="#">Blogs</a>
+            <a href="#">Support Us</a>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Impact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Previous Donation</a>
+            <a href="#">Community</a>
+            <a href="#">Settings</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> Copyright 2024 Food Fridge Community all rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+    document.getElementById('openPopupBtn').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'flex';
+});
+
+document.getElementById('closePopupBtn').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('popup')) {
+        document.getElementById('popup').style.display = 'none';
+    }
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Add login logic here
+    alert('Logged in!');
+    document.getElementById('popup').style.display = 'none';
+});
+
+
+
+const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
+
+if (bar) {
+    bar.addEventListener('click',() => {
+        nav.classList.add('active');
+    })
+}
+ 
+if (close) {
+    close.addEventListener('click',() => {
+        nav.classList.remove('active');
+    })
+}
+</script>
+</html>

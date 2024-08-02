@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Community Food Fridge </title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/5889382239.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header" class="second-color">
+        <a href="#"><img src="images/logo.png" class="logo" alt="" style="height: 45px; width: 45px; padding-right: 15px;"></a>
+        <h1>Food Fridge Community</h1>
+        <div>
+            <ul id="navbar" >
+                <li><a class="active"  href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a  href="donate.html">Donate</a></li>
+                <li><a href="food.html">Find Food</a></li>
+                <li><a href="community.html">Community</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <button id="openPopupBtn" class="btn btn-primary">Login/Signup</button>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn" class="close">&times;</span>
+                        <h2>Login</h2>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </ul>
+            <div id="mobile">
+                <i id="bar"class="fa-solid fa-outdent"></i>
+            </div>
+        </div>
+    </section>
+    <section id="hero">
+        
+        <div class="carousel-container">
+            <div class="slide carousel-slide">
+                <h4>Join the Fight Against Hunger and Food Waste</h4>
+               <h2>Help to Reduce Hunger and Waste</h2>
+               <p>Find Your Nearest Food Fridge</p>
+               <button class="bt"><a href="donate.html">Donate Now</a></button>
+           </div>
+           <div class="slide carousel-slide">
+               <h4>Donate Your Excess Food and Make a Difference Today</h4>
+              <h2>Empower Your Community, One Meal at a Time</h2>
+              <p>Find Your Nearest Food Fridge</p>
+              <button class="bt">Donate Now</button>
+          </div>
+          <div class="slide carousel-slide">
+            <h4>Together We Can End Hunger</h4>
+              <h2>Become a Volunteer</h2>
+              <p>Your Time Can Make a Difference</p>
+              <button class="bt">Join Us</button>
+          </div>
+        </div>
+    </section>
+    <section id="intro">
+        <div class="into-container">
+            <div class="into-box-1">
+                <h1>We Care!</h1>
+                <p>Welcome to the Community Food Sharing Platform, where we believe in the power of community to drive positive change. Our mission is to connect individuals with excess food to those in need, fostering a culture of sharing, sustainability, and support within our neighborhoods.</p>
+            </div>
+            <div><img src="images/im-12.png" alt="" class="intro-box-2"></div>
+        </div>
+        <div class="into-container">
+            <div><img src="images/im-5.webp" alt="" style="border-radius: 50px;" class="into-box-1"></div>
+            <div class="into-box-2">
+                <h1>Our Mission!</h1>
+                <p>At the Community Food Sharing Platform, our mission is simple yet impactful: to reduce food waste and combat hunger by providing a centralized space where people can easily donate and access food. We strive to create a system where surplus food is redirected to those who need it most, ensuring that no one goes hungry and valuable resources are not wasted.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="goals">
+        <h3 >Towards Achieving</h3>
+        <h1 >Sustainable Development Goals</h1>
+        <div class="sdg">
+            <img src="images/s-2.png" alt="sdg-2" class="flip">
+            <img src="images/s-11.png" alt="sdg-11" class="flip">
+            <img src="images/s-12.png" alt="sdg-12" class="flip">
+            <img src="images/s-17.png" alt="sdg-17" class="flip">
+            
+        </div>
+    </section><br><br>
+    <section id="contact">
+        <h3 class="el" >Feel Free To</h3>
+        <h1 class="el" >Contact Us</h1>
+        <div class="form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required >
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message:</label><br><br>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="not-robot" name="not-robot" required >
+                    <label for="not-robot">I’m not a robot</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+        <footer class="section-p1" style="padding-top: 20px;">
+            <div class="col">
+                <img class="logo" src="images/logo.png" style="height: 80px;width: 80px;">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong>ABC Garden, USA</p>
+                <p><strong>Phone No.:</strong>(+91) 99999-99999 / (+91) 00000-00000</p>
+                <p><strong>Hours:</strong>10:00-18:00, Mon-Sat</p>
+                <div class="follow">
+                    <h4>Follow Us!</h4>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Categories</h4>
+                <a href="#">Donate Food</a>
+                <a href="#">Find Food</a>
+                <a href="#">Community</a>
+                <a href="#">Blogs</a>
+                <a href="#">Support Us</a>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Impact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">Previous Donation</a>
+                <a href="#">Community</a>
+                <a href="#">Settings</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> Copyright 2024 Food Fridge Community all rights reserved.</p>
+            </div>
+        </footer>
+</body>
+
+<script>
+    document.getElementById('openPopupBtn').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'flex';
+});
+
+document.getElementById('closePopupBtn').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('popup')) {
+        document.getElementById('popup').style.display = 'none';
+    }
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Add login logic here
+    alert('Logged in!');
+    document.getElementById('popup').style.display = 'none';
+});
+
+
+
+const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
+
+if (bar) {
+    bar.addEventListener('click',() => {
+        nav.classList.add('active');
+    })
+}
+ 
+if (close) {
+    close.addEventListener('click',() => {
+        nav.classList.remove('active');
+    })
+}
+</script>
